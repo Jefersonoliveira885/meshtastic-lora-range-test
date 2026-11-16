@@ -1,0 +1,22 @@
+METADADOS DO ENSAIO MESHTASTIC RANGE TEST
+
+ID do ensaio: RT_20261024_101854
+Início local: 2026-10-24T07:18:54.158-03:00
+Início UTC: 2026-10-24T10:18:54.158+00:00
+Porta serial do Nó 02: COM3
+ID filtrado do Nó 01: !0407d37c
+Intervalo configurado no emissor: 30.0 s
+Mensagens por distância: 30
+Distâncias programadas: 0, 100, 200, 500, 750, 1000, 1500, 2000, 3000 m
+Aceitar MQTT: NÃO
+Margem adicional de timeout: 90.0 s
+
+ARQUIVOS
+- pacotes_brutos.csv: todos os pacotes RANGE_TEST recebidos, inclusive deslocamento.
+- resultado_detalhado.csv: uma linha para cada transmissão esperada.
+- resumo_por_distancia.csv: PDR, PER, RSSI, SNR e perdas por distância.
+
+LIMITAÇÃO TEMPORAL
+O Range Test envia payload "seq N", sem timestamp do transmissor.
+O horário de envio é estimado pela sequência e pelo intervalo.
+O horário de recepção, RSSI e SNR são medidos no Nó 02.
